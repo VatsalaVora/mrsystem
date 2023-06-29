@@ -1,0 +1,57 @@
+html{
+    height: 140%;
+
+}
+
+body {
+   background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,1,25,1) 35%, rgba(13,80,93,1) 100%);
+}
+
+.logo {
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  width: 150px;
+  z-index:1;
+}
+
+#headline {
+  position: absolute;
+  top: 40%;
+  left: 1%;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 24px;
+  font-family: 'Georgia', serif;
+}
+
+.Section1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 45%;
+  box-sizing: border-box;
+}
+
+.Section1 img {
+    height: 80%;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 1%;
+  padding: 5px;
+}
+
+#title {
+    font-family: 'Georgia', serif;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}

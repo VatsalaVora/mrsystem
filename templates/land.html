@@ -1,0 +1,171 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="icon" href="{%  static 'media/favicon.png' %}">
+	<link rel="stylesheet" href="{%  static 'css/land.css' %}">
+</head>
+<body>
+	<img src="{%  static 'media/logo.png' %}" alt="logo" class="logo">
+
+	<div class="dropdown-cate">
+	  <button class="dropbtn">CATEGORIES</button>
+	  <div class="dropdown-content">
+		  <a href="action">Action</a>
+		  <a href="comedy">Comedy</a>
+		  <a href="horror">Horror</a>
+
+	  </div>
+	</div>
+	<div class="dropdown-prof">
+	  <button class="dropbtn" onclick="location.href= '{% url 'home'%}'"> SIGN IN </button>
+	</div>
+
+	<nav>
+	  <a href="#" id="toprated">IMDb TOP RATED</a>
+	  <a href="#" id="topindian">IMDb BOLLYWOOD PICKS </a>
+
+	  <div id="indicator"></div>
+	</nav>
+
+	<div class="default" id="default">
+		<p id="headline2">Unlock personalized recommendations by signing up with us.</p>
+		<br>
+		<button  onclick="location.href= '{% url 'home'%}'" class="btnsgn">SIGN IN</button>
+	</div>
+
+
+
+	<div class="new-div2" id="new-div2" style="display:none">
+		<div class="row">
+			<div class="column">
+					<img src="{%  static 'media/movies/1.jpg' %}" id="img1" alt="The Shawshank Redemption" style="width:100%">
+					<p id="title">The Shawshank Redemption (1994)</p>
+					<p id="title">&#x2B50;9.2</p>
+				</div>
+
+				<div class="column">
+					<img src="{%  static 'media/movies/2.jpg' %}" id="img2" alt="The Godfather" style="width:100%">
+					<p id="title">The Godfather (1972)</p>
+					<p id="title">&#x2B50;9.2</p>
+				</div>
+
+				<div class="column">
+					<img src="{%  static 'media/movies/3.jpg' %}" id="img3" alt="The Dark Knight" style="width:100%">
+					<p id="title">The Dark Knight (2008)</p>
+					<p id="title">&#x2B50;9.0</p>
+				</div>
+
+				<div class="column">
+					<img src="{%  static 'media/movies/4.jpg' %}" id="img4" alt="The Godfather Part II" style="width:100%">
+					<p id="title">The Godfather Part II (1974)</p>
+					<p id="title">&#x2B50;9.0</p>
+				</div>
+
+				<div class="column">
+					<img src="{%  static 'media/movies/5.jpg' %}" id="img5" alt="12 Angry Men" style="width:100%">
+					<p id="title">12 Angry Men (1957)</p>
+					<p id="title">&#x2B50;9.0</p>
+				</div>
+
+				<div class="column">
+					<img src="{%  static 'media/movies/6.jpg' %}" id="img6" alt="Schindler's List" style="width:100%">
+					<p id="title">Schindler's List (1993)</p>
+					<p id="title">&#x2B50;8.9</p>
+				</div>
+
+				<div class="column">
+					<img src="{%  static 'media/movies/7.jpg' %}" id="img7" alt="The Lord of the Rings: The Return of the King" style="width:100%">
+					<p id="title">The Lord of the Rings: The Return of the King (2003)</p>
+					<p id="title">&#x2B50;8.9</p>
+				</div>
+
+				<div class="column">
+					<img src="{%  static 'media/movies/8.jpg' %}" id="img8" alt="Pulp Fiction " style="width:100%">
+					<p id="title">Pulp fiction (1994)</p>
+					<p id="title">&#x2B50;8.8</p>
+				</div>
+
+				<div class="column">
+					<img src="{%  static 'media/movies/9.jpg' %}" id="img9" alt="The Lord of the Rings: The Fellowship of the Ring" style="width:100%">
+					<p id="title">The Lord of the Rings: The Fellowship of the Ring (2001)</p>
+					<p id="title">&#x2B50;8.8</p>
+				</div>
+
+				<div class="column">
+					<img src="{%  static 'media/movies/10.jpg' %}" id="img10" alt="The Good, the Bad and the Ugly" style="width:100%">
+					<p id="title">Il Buono, Il Brutto, Il Cattivo (1996)</p>
+					<p id="title">&#x2B50;8.8</p>
+				</div>
+
+
+
+		</div>
+	</div>
+
+	<div class="new-div3" id="new-div3" style="display:none">
+		<div class="row1">
+
+  			<div class="column1">
+					<img src="{%  static 'media/movies/1b.jpg' %}" id="img1b" alt="Lohardaga" style="width:100%">
+					<p id="title">Rocketry: The Nambi Effect (2022)</p>
+				</div>
+
+				<div class="column1">
+					<img src="{%  static 'media/movies/2b.jpg' %}" id="img2b" alt="Tu Jhoothi Main Makkaar" style="width:100%">
+					<p id="title">777 Charlie (2022)</p>
+				</div>
+
+				<div class="column1">
+					<img src="{%  static 'media/movies/3b.jpg' %}" id="img3b" alt="Laapataa Ladies" style="width:100%">
+					<p id="title">3 Idiots (2009)</p>
+				</div>
+
+				<div class="column1">
+					<img src="{%  static 'media/movies/4b.jpg' %}" id="img4b" alt="InCar" style="width:100%">
+					<p id="title">Jai Bhim (2021)</p>
+				</div>
+
+				<div class="column1">
+					<img src="{%  static 'media/movies/5b.jpg' %}" id="img5b" alt="Khela Ho Be" style="width:100%">
+					<p id="title">Soorarai Pottru (2020)</p>
+				</div>
+
+				<div class="column1">
+					<img src="{%  static 'media/movies/6b.jpg' %}" id="img6b" alt="Selfiee" style="width:100%">
+					<p id="title">Taare Zameen Par (2007)</p>
+				</div>
+
+				<div class="column1">
+					<img src="{%  static 'media/movies/7b.jpg' %}" id="img7b" alt="Shehzada" style="width:100%">
+					<p id="title">Dangal (2016)</p>
+				</div>
+
+				<div class="column1">
+					<img src="{%  static 'media/movies/8b.jpg' %}" id="img8b" alt="The Tenant" style="width:100%">
+					<p id="title">Kaithi (2019)</p>
+				</div>
+
+				<div class="column1">
+					<img src="{%  static 'media/movies/9b.jpg' %}" id="img9b" alt="Asuran" style="width:100%">
+					<p id="title">Asuran (2019)</p>
+				</div>
+
+				<div class="column1">
+					<img src="{%  static 'media/movies/10b.jpg' %}" id="img10b" alt="Drishyam 2" style="width:100%">
+					<p id="title">Drishyam 2 (2021)</p>
+				</div>
+                </div>
+  			</div>
+		</div>
+	</div>
+
+
+<script src="{% static 'js/land.js' %}" type="text/javascript"></script>
+</body>
+</html>
